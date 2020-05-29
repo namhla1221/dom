@@ -88,7 +88,7 @@ function update(){
    warnLevel=Number(warningLevel.value);
  critLevel=Number(criticalLevel.value);
     styleTotal(allCostTotal); 
-alert("bread")
+
     }
 btnAdd.addEventListener("click",clicked);
 btnUpd.addEventListener("click",update);

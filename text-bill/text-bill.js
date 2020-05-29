@@ -38,7 +38,7 @@ billTotal += 0.75;
 
 }
 
-var roundedBillTotal = billTotal.toFixed(2);
+var roundedBillTotal =(billTotal).toFixed(2);
 callT.innerHTML = (callsTotal).toFixed(2);
 smsT.innerHTML = (smsTotal).toFixed(2);
 return callsTotal + smsTotal;
