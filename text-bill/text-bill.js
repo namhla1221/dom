@@ -10,11 +10,11 @@
 // * add the appropriate value to the running total
 // * add nothing for invalid values that is not 'call' or 'sms'.
 // * display the latest total on the screen
-var type = document.querySelector (".billTypeText");
-var button = document.querySelector (".addToBillBtn");
-var callT = document.querySelector (".callTotalOne");
-var smsT = document.querySelector (".smsTotalOne");
-var total = document.querySelector (".totalOne");
+const type = document.querySelector (".billTypeText");
+const button = document.querySelector (".addToBillBtn");
+const callT = document.querySelector (".callTotalOne");
+const smsT = document.querySelector (".smsTotalOne");
+const total = document.querySelector (".totalOne");
 
 var callsTotal = 0;
 var smsTotal = 0;
@@ -48,7 +48,7 @@ total.classList.remove ("warning")
 if (currentTotal >= 50 ){
 total.classList.add ("danger")
 }
-else if (currentTotal >= 30 && currentTotal <= 50 ) { 
+else if (currentTotal >= 30 && currentTotal <= 50 ) {
 total.classList.add ("warning")
 }
 }
@@ -56,7 +56,6 @@ total.classList.add ("warning")
 function calculateBtnClicked (){
 var billString = type.value;
 const roundedBillTotal = totalPhoneBill (billString);
-
 total.innerHTML = roundedBillTotal
 styleTotalColor (roundedBillTotal);
 }
